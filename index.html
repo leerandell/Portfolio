@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Randell C. Reyes | Portfolio</title>
+    <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(255, 127, 0, 0.8);
+            padding: 5px 0;
+            text-align: center;
+        }
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; 
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        #about p {
+            margin-bottom: 15px;
+            line-height: 2.5;
+        }
+
+        nav a:hover {
+            background-color: #ff7f00;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ff7f00;
+        }
+
+
+            #skills {
+        padding: 60px 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+        text-align: center;
+        }
+
+        #skills h2 {
+            font-size: 2.5em;
+            color: #ff7f00;
+            margin-bottom: 30px;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill-category {
+            background-color: rgba(34, 34, 34, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-category h3 {
+            color: #ff7f00;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .skill-category ul {
+            list-style-type: none;
+            padding: 0;
+            color: #ddd;
+        }
+
+        .skill-category ul li {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .portfolio-item {
+            background-color: rgba(34, 34, 34, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.5em;
+            color: #ff7f00;
+            text-align: center;
+        }
+
+        .portfolio-item p {
+            color: #ddd;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+            #contact {
+        padding: 60px 20px;
+        text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5em;
+            color: #ff7f00;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background-color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            background-color: #ff7f00;
+        }
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 20px;
+            }
+
+            .contact-form {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            nav a {
+                font-size: 1em;
+            }
+
+            .contact-form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/ran1x1.png" alt="Lee Randell C. Reyes" class="profile-photo">
+    <h1>Lee Randell C. Reyes</h1>
+    <p>Computer Science Student</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p> Hi there! I'm a Computer Science student with a passion for technology.
+        I have experience working directly with Python, Java, and JavaScript, and I'm constantly willing to pick up more skills and take on challenging projects. 
+        My objective is to provide creative ideas that have a beneficial impact. 
+        I'm still exploring this field to see which one best suits my interests and skill set, and I'm thrilled about the countless opportunities for advancement it offers.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Dart</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Interests</h3>
+            <ul>
+                <li>UI / UX Design</li>
+                <li>Web & App Development</li>
+                <li>Game Development</li>
+                <li>Software Design</li>
+                <li>Machine Learning Basics</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Other Interests</h3>
+            <ul>
+                <li>Data Structures & Algorithms</li>
+                <li>SQL & Database Management</li>
+                <li>Photo and Video Editing</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-gallery">
+        <div class="portfolio-item">
+            <img src="images\mappyHau.png" alt="Project 1">
+            <a href="https://leerandell.github.io/MappyHAU/" class="button-link" target="_blank">
+                <h3>MappyHAU</h3>
+            </a>
+            <p>MappyHAU is an application particularly developed for Holy Angel University
+                students and new visitors who are unfamiliar with the whereabouts of
+                the offices, buildings or departments. This app is a map of the university
+                that shows the locations and descriptions of buildings. This app shows the user pictures of
+                each building at Holy Angel University so that they may quickly figure out
+                where they are heading. This app will be incredibly useful for new students or
+                transferees who are unfamiliar with the school.</p>
+        </div>               
+        <div class="portfolio-item">
+            <img src="images/hotel.png" alt="Project 2">
+            <a href="https://github.com/leerandell/BlockChainBasedHotelSystem" class="button-link" target="_blank">
+            <h3>Hotel DApp</h3>
+            </a>
+            <p>This web application is a decentralized application (dApp) that enhances the hotel booking experience while streamlining operations for hotel management. 
+                This system aims to empower hotel owners and customers by decentralizing the reservation process, thereby offering a more secure, transparent, and cost-effective alternative to traditional booking platforms. 
+                This dApp is designed to enhance the overall customer experience, enabling secure, efficient bookings while increasing operational efficiency for hotel managers. 
+            </p>
+        </div>
+        <div class="portfolio-item">
+            <img src="images/thesis.png" alt="Project 3">
+            <a href="https://github.com/leerandell/GradePredictorApp" class="button-link" target="_blank">
+            <h3>Grade Predictor App</h3>
+            </a>
+            <p>This Grade Predictor App is to predict the academic performance of grade 6 students using a multi-level classification system. 
+                Moreover, the aim of this is to provide an administrative hub for teachers to early determine students’ academic performance and to adjust teaching methods, visual aids, and other learning materials. </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, feel free to connect with me through the links below.</p>
+    <div class="contact-links">
+        <a href="https://www.facebook.com/leerandell.reyes" target="_blank">
+            <img src="images/fb.png" alt="Facebook" class="contact-icon">
+            https://www.facebook.com/leerandell.reyes
+        </a>
+        <a href="https://github.com/leerandell" target="_blank">
+            <img src="images/github.png" alt="GitHub" class="contact-icon">
+            https://github.com/leerandell
+        </a>
+        <a href="mailto:lerandcruzreyes@gmail.com">
+            <img src="images/gmail.png" alt="Gmail" class="contact-icon">
+            lerandcruzreyes@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/lee-ran-8253a0337/" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon">
+            https://www.linkedin.com/in/lee-ran-8253a0337/
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Lee Randell C. Reyes. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
